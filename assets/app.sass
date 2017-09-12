@@ -1,16 +1,29 @@
-// Import Initial Variables
+// ==== Import initial variables ===
 @import "~bulma/sass/utilities/initial-variables"
 
 
-// Set new initial and derived variables
-@import './base/colors'
-// @import './base/typography'
+// === Set custom initial variables ===
+// @import './settings.colors--init.sass'
+// @import './settings.settings.typography--init.sass'
+
+@import '_settings.colors--init.sass'
+@import '_settings.typography--init.sass'
 
 
-// Import the rest of Bulma
-@import '~bulma/sass/utilities/initial-variables.sass'
+// === Import functions & derived-variables ===
+// @import '~bulma/sass/utilities/initial-variables.sass'
 @import '~bulma/sass/utilities/functions.sass'
 @import './bulma/derived-variables'
+
+
+// === Set custom initial variables ===
+// @import './base/colors__derived'
+
+@import '_settings.colors--derived'
+@import '_settings.typography--derived'
+
+
+// === Import the rest of bulma ===
 @import '~bulma/sass/utilities/animations.sass'
 @import '~bulma/sass/utilities/mixins.sass'
 @import '~bulma/sass/utilities/controls.sass'
